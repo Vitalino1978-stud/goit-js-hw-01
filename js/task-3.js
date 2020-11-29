@@ -5,13 +5,13 @@ let message;
 
 const userInput = prompt(`Пожалуйста, введите пароль`);
 
-if (userInput == null) {
-  let message =  'Отменено пользователем!';
+if (userInput === null) {
+  message =  'Отменено пользователем!';
   alert(message);
-} else if (userInput == ADMIN_PASSWORD) {
-  let message = 'Добро пожаловать!';
+} else if (userInput === ADMIN_PASSWORD) {
+  message = 'Добро пожаловать!';
   alert (message)
 } else if (userInput !== ADMIN_PASSWORD) {
-  let message = 'Доступ запрещен, неверный пароль!';
+  message = 'Доступ запрещен, неверный пароль!';
   alert(message);
 }

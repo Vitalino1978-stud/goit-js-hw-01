@@ -1,25 +1,31 @@
-const country = prompt(`Введите страну доставки:`).toLowerCase();
-switch (country) {
-  case 'китай':
-    console.log(`Доставка в Китай будет стоить 100 кредитов`);
-    break;
+
+const country = prompt(`Введите страну доставки:`);
+if (country === null) {
+  alert(`Попробуйте ввести название страны еще раз`);
+} else {
+  const country1 = country.toLowerCase();
+  switch (country1) {
+    case 'китай':
+      console.log(`Доставка в Китай будет стоить 100 кредитов`);
+      break;
   
-  case 'чили':
-    console.log(`Доставка в Чили будет стоить 250 кредитов`);
-    break;
+    case 'чили':
+      console.log(`Доставка в Чили будет стоить 250 кредитов`);
+      break;
     
-  case 'австралия':
-    console.log(`Доставка в Австралию будет стоить 170 кредитов`);
-    break;
+    case 'австралия':
+      console.log(`Доставка в Австралию будет стоить 170 кредитов`);
+      break;
   
-  case 'индия':
-    console.log(`Доставка в Индию будет стоить 80 кредитов`);
-    break;
+    case 'индия':
+      console.log(`Доставка в Индию будет стоить 80 кредитов`);
+      break;
   
-  case 'ямайка':
-    console.log(`Доставка на  Ямайку будет стоить 120 кредитов`);
-    break;
+    case 'ямайка':
+      console.log(`Доставка на  Ямайку будет стоить 120 кредитов`);
+      break;
   
-  default:
-    alert(`В вашей стране доставка недоступна`);
+    default:
+      alert(`В вашей стране доставка недоступна`);
+  }
 }
